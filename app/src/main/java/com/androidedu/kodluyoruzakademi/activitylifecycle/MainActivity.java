@@ -2,10 +2,10 @@ package com.androidedu.kodluyoruzakademi.activitylifecycle;
 
 import android.content.Intent;
 import android.content.res.Configuration;
+import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 
@@ -19,28 +19,28 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Log.e(MAIN_TAG, "onCreate");
-        //Çalıştı
+        //Çalıştı..
     }
 
     @Override
     public void onContentChanged() {
         super.onContentChanged();
         Log.e(MAIN_TAG, "onContentChanged");
-        //Çalıştı
+        //Çalıştı..
     }
 
     @Override
     protected void onStart() {
         super.onStart();
         Log.e(MAIN_TAG, "onStart");
-        //Çalıştı
+        //Çalıştı..
     }
 
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
         Log.e(MAIN_TAG, "onRestoreInstanceState");
-        //Çalıştı
+        //Çalışmadı. Bu metod eğer önceden onSaveInstanceState() kullanılarak bir instance kaydedilmişse çağırılır.
 
     }
 
@@ -48,35 +48,35 @@ public class MainActivity extends AppCompatActivity {
     protected void onPostCreate(@Nullable Bundle savedInstanceState) {
         super.onPostCreate(savedInstanceState);
         Log.e(MAIN_TAG, "onPostCreate");
-        //Çalıştı
+        //Çalıştı..
     }
 
     @Override
     protected void onResume() {
         super.onResume();
         Log.e(MAIN_TAG, "onResume");
-        //Çalıştı
+        //Çalıştı..
     }
 
     @Override
     protected void onPostResume() {
         super.onPostResume();
         Log.e(MAIN_TAG, "onPostResume");
-        //Çalıştı
+        //Çalıştı..
     }
 
     @Override
     public void onAttachedToWindow() {
         super.onAttachedToWindow();
         Log.e(MAIN_TAG, "onAttachedToWindow");
-        //Çalıştı
+        //Çalıştı..
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         Log.e(MAIN_TAG, "onCreateOptionsMenu");
         return super.onCreateOptionsMenu(menu);
-        //Çalıştı
+        //Çalıştı..
 
 
     }
@@ -85,70 +85,70 @@ public class MainActivity extends AppCompatActivity {
     public boolean onPrepareOptionsMenu(Menu menu) {
         Log.e(MAIN_TAG, "onPrepareOptionsMenu");
         return super.onPrepareOptionsMenu(menu);
-        //Çalıştı
+        //Çalıştı..
     }
 
     @Override
     protected void onPause() {
         super.onPause();
         Log.e(MAIN_TAG, "onPause");
-        //Çalıştı
+        //Çalıştı..
     }
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         Log.e(MAIN_TAG, "onSaveInstanceState");
-        //Çalıştı
+        //Çalıştı..
     }
 
     @Override
     protected void onStop() {
         super.onStop();
         Log.e(MAIN_TAG, "onStop");
-        //Çalıştı
+        //Çalıştı..
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
         Log.e(MAIN_TAG, "onDestroy");
-        //Çalıştı
+        //Çalıştı..
     }
 
     @Override
     public void onUserInteraction() {
         super.onUserInteraction();
         Log.e(MAIN_TAG, "onUserInteraction");
-        //Çalıştı
+        //Çalıştı..
     }
 
     @Override
     protected void onUserLeaveHint() {
         super.onUserLeaveHint();
         Log.e(MAIN_TAG, "onUserLeaveHint");
-        //Çalıştı
+        //Çalıştı..
     }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        Log.e(MAIN_TAG, "onActivityResult");
-        //Bir aktiviteyi sonuç alacak şekilde başlatmak için startActivityForResult() metodu, başlatılan aktiviteden elde edilen sonuçları elde etmek ve işlem yapmak için ise, onActivityResult() metodu kullanılır. Bu activity bu şekilde kullanılamıyor.
+        super.onActivityResult( requestCode, resultCode, data );
+        Log.e( MAIN_TAG, "onActivityResult" );
+        //Başlattığınız bir activity den çıktığınızda, size gönderilen requestCode'u ve resultCodu'u almak için çağırılan metod.
     }
 
     @Override
     protected void onRestart() {
         super.onRestart();
         Log.e(MAIN_TAG, "onRestart");
-        //Çalıştı
+        //Çalıştı..
     }
 
     @Override
     public void onAttachFragment(Fragment fragment) {
         super.onAttachFragment(fragment);
         Log.e(MAIN_TAG, "onAttachFragment");
-        //Activity e fragment attached'lendiğinde çalışır ama bu activity de fragment  yok.
+        //Eğer bir fragment Activity’nize eklenmek isterse, bu durumda çağrılır.
 
     }
 
@@ -156,13 +156,13 @@ public class MainActivity extends AppCompatActivity {
     public void onConfigurationChanged(Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
         Log.e(MAIN_TAG, "onConfigurationChanged");
-        //Çalıştı
+        //Manifest dosyasında değişiklikler yapmak istediğiniz zaman çağırılır..
     }
 
     @Override
     public void onBackPressed() {
         super.onBackPressed();
         Log.e(MAIN_TAG, "onBackPressed");
-        //Çalıştı
+        //Çalıştı...
     }
 }

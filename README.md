@@ -39,8 +39,3 @@ ikinci String'e ise method isimlerini yazınız.
 8. Çalışmayan methodların neden çalışmadığını interneti kullanarak araştırınız.
 9. Cevabını bulduklarınızı methodların içerisine Comment (//) olarak yazınız.
 10. Yazdığınzı kodları Push'layınız. Ve bu adres üzerindeki ana projeye Pull Request (PR) atınız.
-
-# En başarılı PR proje'ye "orjinal cevap" olarak kabul edilecektir.
-
-# Hem belki şurada ufak bir Orjinal GitHub Sticker'ları vardır; hediye edilecek (:
- ![alt text](https://github.com/AndroidEduIO/ActivityLifeCycle/blob/master/Award.png)
